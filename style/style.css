@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  padding: 16px 112px;
+}
+.header .nav .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+.header .nav .list__item-link {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: #14171F;
+}
+.header .nav .list__item1-link {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  color: #F9995D;
+}
+
+.main .hero {
+  background-image: url(../img/low-angle-shot-of-a-facade-of-a-white-modern-building-under-a-blue-clear-sky.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.main .hero__h1 {
+  color: #000;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-family: "Work Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 112px;
+}
+.main .hero .features {
+  grid-area: block;
+  display: grid;
+  grid-template-areas: "span1 span1" "h2 h2" "but2 but1";
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #2947A9;
+}
+.main .hero .features__span {
+  text-align: center;
+  grid-area: span1;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px 0;
+}
+.main .hero .features__p {
+  text-align: center;
+  grid-area: h2;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 26px;
+  width: 312px;
+  margin: 0 auto;
+}
+.main .hero .features__next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  grid-area: but1;
+  width: 207px;
+  height: 40px;
+  background-color: #000;
+}
+.main .hero .features__next-link {
+  color: #fff;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .hero .features__back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  grid-area: but2;
+  width: 207px;
+  height: 40px;
+  background-color: #000;
+}
+.main .hero .features__back-link {
+  color: #fff;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .rep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+  padding: 60px 0;
+}
+.main .rep__h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .rep .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.main .rep .item .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
+  flex-direction: column;
+  border: 1.4px solid #E0E3EB;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  width: 292px;
+}
+.main .rep .item .card__h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  color: #3D445C;
+}
+.main .rep .item .card__p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #858EAD;
+  width: 254px;
+}
+.main .about {
+  position: relative;
+}
+.main .about__img {
+  margin: 74px 0 200px 114px;
+  background-image: url(../img/87a6fb6a79f6ebda83f9824c72dc2d4b.jpeg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 900px;
+  height: 670px;
+}
+.main .about .card {
+  position: absolute;
+  top: 12%;
+  right: 15%;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #2947A9;
+}
+.main .about .card__h2 {
+  padding: 10px 0;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .about .card__p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  width: 388px;
+}
+.main .about .card__button {
+  margin-top: 50px;
+  padding: 16px 20px;
+  background-color: #fff;
+  border: 2px solid #2947A9;
+  border-radius: 6px;
+}
+.main .about .card__button-link {
+  color: #2947A9;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.main .services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  flex-direction: column;
+  padding: 44px 0 76px;
+  background-color: #F6F8F7;
+}
+.main .services__h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .services .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.main .services .list__item {
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #2947A9;
+  width: 271px;
+  height: 181px;
+}
+.main .services .list__item-h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+}
+.main .services .list__item-svg {
+  padding: 0 10px 20px 10px;
+  border-bottom: 2px solid #E0E3EB;
+}
+.main .services .list__item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #fff;
+  width: 271px;
+  height: 181px;
+}
+.main .services .list__item1-h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: #2947A9;
+}
+.main .services .list__item1-svg {
+  padding: 0 10px 20px 10px;
+  border-bottom: 2px solid #E0E3EB;
+}/*# sourceMappingURL=style.css.map */
