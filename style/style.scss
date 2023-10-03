@@ -14,6 +14,7 @@ $neu100: #E0E3EB;
 $neu50: #F6F8F7;
 $white: #fff;
 $black: #000;
+$transparent: rgba(117, 190, 218, 0);
 
 @mixin sans($fs, $fw, $lh) {
     font-family: 'Work Sans', sans-serif;
@@ -230,6 +231,7 @@ $black: #000;
         flex-direction: column;
         padding: 44px 0 76px;
         background-color: $neu50;
+
         &__h2 {
             @include sans(36px, 700, normal);
         }
@@ -239,6 +241,7 @@ $black: #000;
             flex-wrap: wrap;
             width: 90%;
             margin: 0 auto;
+
             &__item {
                 margin: 0 50px;
                 @include flex(center, center, 20px);
@@ -246,11 +249,13 @@ $black: #000;
                 background-color: $primary;
                 width: 271px;
                 height: 181px;
-                &-h3{
+
+                &-h3 {
                     @include sans(20px, 600, normal);
                     color: $white;
                 }
-                &-svg{
+
+                &-svg {
                     padding: 0 10px 20px 10px;
                     border-bottom: 2px solid $neu100;
                 }
@@ -262,13 +267,401 @@ $black: #000;
                 background-color: $white;
                 width: 271px;
                 height: 181px;
-                &-h3{
+
+                &-h3 {
                     @include sans(20px, 600, normal);
                     color: $primary;
                 }
-                &-svg{
+
+                &-svg {
                     padding: 0 10px 20px 10px;
                     border-bottom: 2px solid $neu100;
+                }
+            }
+        }
+    }
+
+    .experience {
+        padding: 5% 0;
+        @include flex(center, center, 150px);
+
+        .list {
+            display: grid;
+            grid-template-areas:
+                '. . . item1 item1 item1'
+                'item2 item2 item2 item2 . .'
+                '. . item3 item3 item3 .'
+                '. item4 item4 item4 . .';
+
+            .item1 {
+                grid-area: item1;
+                padding: 30px;
+                @include flex(flex-start, center, 10px);
+                box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.10);
+                border: 1px solid $white;
+                border-radius: 4px;
+
+                .text {
+                    width: fit-content;
+                    @include flex(flex-start, flex-start, 2px);
+                    flex-direction: column;
+
+                    &__number {
+                        @include sans(72px, 600, normal);
+                        color: $neu800;
+                    }
+
+                    &__span {
+                        color: $neu500;
+                        @include sans(24px, 400, normal);
+                        border-left: 7px solid $secondary;
+                        padding-left: 12px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            &__item2 {
+                grid-area: item2;
+                padding: 30px;
+                @include flex(center, center, 10px);
+                box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.10);
+                border: 1px solid $white;
+                border-radius: 4px;
+
+                .text {
+                    width: fit-content;
+                    @include flex(flex-start, flex-start, 2px);
+                    flex-direction: column;
+
+                    &__number {
+                        @include sans(72px, 600, normal);
+                        color: $neu800;
+                    }
+
+                    &__span {
+                        color: $neu500;
+                        @include sans(24px, 400, normal);
+                        border-left: 7px solid $secondary;
+                        padding-left: 12px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            &__item3 {
+                grid-area: item3;
+                padding: 30px;
+                @include flex(center, center, 10px);
+                box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.10);
+                border: 1px solid $white;
+                border-radius: 4px;
+
+                .text {
+                    width: fit-content;
+                    @include flex(flex-start, flex-start, 2px);
+                    flex-direction: column;
+
+                    &__number {
+                        @include sans(72px, 600, normal);
+                        color: $neu800;
+                    }
+
+                    &__span {
+                        color: $neu500;
+                        @include sans(24px, 400, normal);
+                        border-left: 7px solid $secondary;
+                        padding-left: 12px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            &__item4 {
+                grid-area: item4;
+                padding: 30px;
+                @include flex(center, center, 10px);
+                box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.10);
+                border: 1px solid $white;
+                border-radius: 4px;
+
+                .text {
+                    width: fit-content;
+                    @include flex(flex-start, flex-start, 2px);
+                    flex-direction: column;
+
+                    &__number {
+                        @include sans(72px, 600, normal);
+                        color: $neu800;
+                    }
+
+                    &__span {
+                        color: $neu500;
+                        @include sans(24px, 400, normal);
+                        border-left: 7px solid $secondary;
+                        padding-left: 12px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        .text {
+            @include flex(flex-start, flex-start, 40px);
+            flex-direction: column;
+            width: 330px;
+
+            &__h2 {
+                color: $primary;
+                @include sans(60px, 700, normal);
+            }
+
+            &__p {
+                color: $neu600;
+                @include sans(20px, 400, normal);
+            }
+
+            &__button {
+                padding: 16px 20px;
+                background-color: $primary;
+                border-radius: 2px;
+
+                &-link {
+                    color: $white;
+                    @include sans(18px, 600, normal);
+                }
+            }
+        }
+    }
+
+    .consultation {
+        @include flex(center, center, 180px);
+        padding: 100px;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/fon1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__text {
+            @include flex(flex-start, flex-start, 30px);
+            flex-direction: column;
+
+            &-h2 {
+                color: $white;
+                @include sans(36px, 700, normal);
+            }
+
+            &-p {
+                @include flex(center, center, 10px);
+
+                &_p1 {
+                    color: $white;
+                    @include sans(24px, 400, normal);
+                }
+
+                &_p2 {
+                    color: $white;
+                    @include sans(24px, 400, normal);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__button {
+            background-color: $transparent;
+            border: 2px solid $white;
+            border-radius: 2px;
+            padding: 16px 20px;
+
+            &-link {
+                color: $white;
+                @include sans(18px, 600, normal);
+            }
+        }
+    }
+
+    .project {
+        padding: 5% 0;
+        @include flex(space-around, flex-start, none);
+
+        .text {
+            @include flex(flex-start, flex-start, 40px);
+            flex-direction: column;
+
+            &__h2 {
+                color: $neu800;
+                @include sans(36px, 700, normal);
+            }
+
+            &__list {
+                @include flex(flex-start, flex-start, 20px);
+                flex-direction: column;
+
+                &-item1 {
+                    border-left: 4px solid $primary;
+
+                    &-link {
+                        color: $primary;
+                        @include sans(24px, 700, normal);
+                        padding-left: 16px;
+                    }
+                }
+
+                &-item {
+                    &-link {
+                        color: $neu200;
+                        @include sans(24px, 500, normal);
+                        padding-left: 16px;
+                    }
+                }
+            }
+        }
+
+        .cards {
+            padding-top: 5%;
+            width: 800px;
+            @include flex(center, center, 32px);
+            flex-wrap: wrap;
+
+            &__card1 {
+                grid-area: card1;
+                background-image: url(../img/card1.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 330px;
+                width: 384px;
+
+                .text {
+                    @include flex(flex-start, flex-start, 12px);
+                    padding: 12px 0 12px 12px;
+                    flex-direction: column;
+                    background-color: $primary;
+
+                    &__h3 {
+                        color: $white;
+                        @include sans(20px, 700, normal);
+                    }
+
+                    &__p {
+                        color: $white;
+                        @include sans(18px, 400, normal);
+                    }
+                }
+            }
+
+            &__card2 {
+                grid-area: card2;
+                background-image: url(../img/card2.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 330px;
+                width: 384px;
+
+                .text {
+                    @include flex(flex-start, flex-start, 12px);
+                    padding: 12px 0 12px 12px;
+                    flex-direction: column;
+                    background-color: $primary;
+
+                    &__h3 {
+                        color: $white;
+                        @include sans(20px, 700, normal);
+                    }
+
+                    &__p {
+                        color: $white;
+                        @include sans(18px, 400, normal);
+                    }
+                }
+            }
+
+            &__card3 {
+                grid-area: card3;
+                background-image: url(../img/card3.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 330px;
+                width: 384px;
+
+                .text {
+                    @include flex(flex-start, flex-start, 12px);
+                    padding: 12px 0 12px 12px;
+                    flex-direction: column;
+                    background-color: $primary;
+
+                    &__h3 {
+                        color: $white;
+                        @include sans(20px, 700, normal);
+                    }
+
+                    &__p {
+                        color: $white;
+                        @include sans(18px, 400, normal);
+                    }
+                }
+            }
+
+            &__card4 {
+                grid-area: card4;
+                background-image: url(../img/card4.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 330px;
+                width: 384px;
+
+                .text {
+                    @include flex(flex-start, flex-start, 12px);
+                    padding: 12px 0 12px 12px;
+                    flex-direction: column;
+                    background-color: $primary;
+
+                    &__h3 {
+                        color: $white;
+                        @include sans(20px, 700, normal);
+                    }
+
+                    &__p {
+                        color: $white;
+                        @include sans(18px, 400, normal);
+                    }
+                }
+            }
+
+            .paginator {
+                width: 800px;
+                grid-area: pag;
+                @include flex(space-between, center, none);
+
+                &__button1 {
+                    @include flex(center, center, 10px);
+                    width: 295px;
+                    height: 64px;
+                    background-color: $neu800;
+
+                    &-link {
+                        color: $white;
+                        @include sans(18px, 400, normal);
+                    }
+                }
+
+                &__button2 {
+                    @include flex(center, center, 10px);
+                    width: 295px;
+                    height: 64px;
+                    background-color: $neu800;
+
+                    &-link {
+                        color: $white;
+                        @include sans(18px, 400, normal);
+                    }
+                }
+
+                &__dots {
+                    @include flex(flex-start, center, 16px);
                 }
             }
         }

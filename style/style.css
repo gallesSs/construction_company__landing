@@ -294,4 +294,486 @@
 .main .services .list__item1-svg {
   padding: 0 10px 20px 10px;
   border-bottom: 2px solid #E0E3EB;
+}
+.main .experience {
+  padding: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.main .experience .list {
+  display: grid;
+  grid-template-areas: ". . . item1 item1 item1" "item2 item2 item2 item2 . ." ". . item3 item3 item3 ." ". item4 item4 item4 . .";
+}
+.main .experience .list .item1 {
+  grid-area: item1;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.main .experience .list .item1 .text {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+  flex-direction: column;
+}
+.main .experience .list .item1 .text__number {
+  font-family: "Work Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: normal;
+  color: #292E3D;
+}
+.main .experience .list .item1 .text__span {
+  color: #667299;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 7px solid #F9995D;
+  padding-left: 12px;
+  margin-left: 20px;
+}
+.main .experience .list__item2 {
+  grid-area: item2;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.main .experience .list__item2 .text {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+  flex-direction: column;
+}
+.main .experience .list__item2 .text__number {
+  font-family: "Work Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: normal;
+  color: #292E3D;
+}
+.main .experience .list__item2 .text__span {
+  color: #667299;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 7px solid #F9995D;
+  padding-left: 12px;
+  margin-left: 20px;
+}
+.main .experience .list__item3 {
+  grid-area: item3;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.main .experience .list__item3 .text {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+  flex-direction: column;
+}
+.main .experience .list__item3 .text__number {
+  font-family: "Work Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: normal;
+  color: #292E3D;
+}
+.main .experience .list__item3 .text__span {
+  color: #667299;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 7px solid #F9995D;
+  padding-left: 12px;
+  margin-left: 20px;
+}
+.main .experience .list__item4 {
+  grid-area: item4;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.main .experience .list__item4 .text {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+  flex-direction: column;
+}
+.main .experience .list__item4 .text__number {
+  font-family: "Work Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: normal;
+  color: #292E3D;
+}
+.main .experience .list__item4 .text__span {
+  color: #667299;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 7px solid #F9995D;
+  padding-left: 12px;
+  margin-left: 20px;
+}
+.main .experience .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  flex-direction: column;
+  width: 330px;
+}
+.main .experience .text__h2 {
+  color: #2947A9;
+  font-family: "Work Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .experience .text__p {
+  color: #525B7A;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .experience .text__button {
+  padding: 16px 20px;
+  background-color: #2947A9;
+  border-radius: 2px;
+}
+.main .experience .text__button-link {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.main .consultation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  padding: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/fon1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .consultation__text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-direction: column;
+}
+.main .consultation__text-h2 {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .consultation__text-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main .consultation__text-p_p1 {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .consultation__text-p_p2 {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
+.main .consultation__button {
+  background-color: rgba(117, 190, 218, 0);
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 16px 20px;
+}
+.main .consultation__button-link {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.main .project {
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: none;
+}
+.main .project .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  flex-direction: column;
+}
+.main .project .text__h2 {
+  color: #292E3D;
+  font-family: "Work Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .project .text__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+}
+.main .project .text__list-item1 {
+  border-left: 4px solid #2947A9;
+}
+.main .project .text__list-item1-link {
+  color: #2947A9;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 16px;
+}
+.main .project .text__list-item-link {
+  color: #C2C7D6;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 16px;
+}
+.main .project .cards {
+  padding-top: 5%;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.main .project .cards__card1 {
+  grid-area: card1;
+  background-image: url(../img/card1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  width: 384px;
+}
+.main .project .cards__card1 .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0 12px 12px;
+  flex-direction: column;
+  background-color: #2947A9;
+}
+.main .project .cards__card1 .text__h3 {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .project .cards__card1 .text__p {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .project .cards__card2 {
+  grid-area: card2;
+  background-image: url(../img/card2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  width: 384px;
+}
+.main .project .cards__card2 .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0 12px 12px;
+  flex-direction: column;
+  background-color: #2947A9;
+}
+.main .project .cards__card2 .text__h3 {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .project .cards__card2 .text__p {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .project .cards__card3 {
+  grid-area: card3;
+  background-image: url(../img/card3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  width: 384px;
+}
+.main .project .cards__card3 .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0 12px 12px;
+  flex-direction: column;
+  background-color: #2947A9;
+}
+.main .project .cards__card3 .text__h3 {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .project .cards__card3 .text__p {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .project .cards__card4 {
+  grid-area: card4;
+  background-image: url(../img/card4.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  width: 384px;
+}
+.main .project .cards__card4 .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0 12px 12px;
+  flex-direction: column;
+  background-color: #2947A9;
+}
+.main .project .cards__card4 .text__h3 {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .project .cards__card4 .text__p {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .project .cards .paginator {
+  width: 800px;
+  grid-area: pag;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+}
+.main .project .cards .paginator__button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 295px;
+  height: 64px;
+  background-color: #292E3D;
+}
+.main .project .cards .paginator__button1-link {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .project .cards .paginator__button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 295px;
+  height: 64px;
+  background-color: #292E3D;
+}
+.main .project .cards .paginator__button2-link {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .project .cards .paginator__dots {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
 }/*# sourceMappingURL=style.css.map */
