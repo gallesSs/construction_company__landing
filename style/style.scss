@@ -666,4 +666,189 @@ $transparent: rgba(117, 190, 218, 0);
             }
         }
     }
+
+    .form {
+        padding: 5% 0;
+        @include flex(center, center, 8px);
+        flex-direction: column;
+        background-color: $neu50;
+
+        &__h2 {
+            margin: 0 auto;
+            color: $neu800;
+            @include sans(36px, 700, normal);
+            text-align: center;
+        }
+
+        &__p {
+            margin: 1% auto;
+            color: $neu800;
+            @include sans(20px, 400, normal);
+            width: 35%;
+            text-align: center;
+        }
+
+        &__p2 {
+            @include sans(16px, 400, normal);
+            color: $neu500;
+        }
+
+        .input {
+            width: 50%;
+            margin: 0 auto;
+            @include flex(center, center, 20px);
+            flex-wrap: wrap;
+
+            .form-control::placeholder {
+                color: $neu300;
+                @include sans(18px, 400, normal);
+            }
+
+            .form-control {
+                margin: 0 10px;
+                height: 40px;
+                width: 280px;
+                border: 1px solid $neu100;
+                border-radius: 4px;
+                background-color: $white;
+            }
+
+            &__p {
+                color: $neu500;
+                @include sans(16px, 400, normal);
+            }
+
+            .form-select {
+                color: $neu300;
+                @include sans(18px, 400, normal);
+                width: 280px;
+                height: 41px;
+                margin: 0 10px;
+            }
+
+            .input-group {
+                width: 600px;
+
+                &-text {
+                    color: $neu300;
+                    @include sans(18px, 400, normal);
+                }
+
+                .form-control {
+                    margin: 0;
+                    height: 135px;
+                }
+            }
+        }
+
+        &__button {
+            width: 271px;
+            height: 53px;
+            background-color: $primary;
+
+            &-link {
+                color: $white;
+                @include sans(18px, 600, normal);
+            }
+        }
+    }
+
+    .bottom {
+        padding: 5% 0;
+        @include flex(space-around, flex-start, none);
+        .left {
+            @include flex(flex-start, flex-start, 32px);
+            flex-direction: column;
+            .info {
+                @include flex(flex-start, flex-start, 32px);
+                flex-direction: column;
+                &__address {
+                    color: $neu800;
+                    @include sans(20px, 400, normal);
+                    text-transform: capitalize;
+
+                    &-span {
+                        color: $primary;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+
+                &__phone {
+                    color: $neu800;
+                    @include sans(20px, 400, normal);
+                    text-transform: capitalize;
+
+                    &-span {
+                        color: $primary;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+
+                &__email {
+                    color: $neu800;
+                    @include sans(20px, 400, normal);
+
+                    &-span {
+                        color: $primary;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .right {
+            @include flex(flex-start, flex-start, 42px);
+            flex-direction: column;
+            &__newsletter {
+                @include flex(flex-start, flex-start, 20px);
+                flex-direction: column;
+
+                &-span {
+                    @include sans(20px, 500, normal);
+                    color: $primary;
+                }
+
+                .input-group {
+                    width: 420px;
+
+                    .form-control::placeholder {
+                        color: $neu300;
+                        @include sans(18px, 400, normal);
+                    }
+                    .btn{
+                        background-color: $secondary;
+                        color: $white;
+                    }
+                }
+            }
+
+            &__social {
+                @include flex(flex-start, flex-start, 20px);
+                flex-direction: column;
+
+                &-span {
+                    @include sans(20px, 500, normal);
+                    color: $primary;
+                }
+
+                &-icons {
+                    @include flex(flex-start, center, 20px);
+                }
+            }
+        }
+    }
+}
+.footer{
+    @include flex(flex-start, center, none);
+    height: 70px;
+    background-color: $primary;
+    &__span{
+        margin: 0 10%;
+        color: $white;
+        @include sans(16px, 400, normal);
+        text-align: center;
+    }
 }
